@@ -1,0 +1,15 @@
+create and overwrite all shelf pages up top, then append for rest of script
+
+if author == end
+	insert end of file
+
+elseif author cell empty
+	insert book entry
+
+elseifif author cell filled
+	insert horizontal line and author's name
+
+
+
+
+Shelves: Fiction, Non-Fiction, Art-Design, Art-Film, Art-Instruction, Mythology, Poetry-Plays-Essays, Comics-Manga-Visual
