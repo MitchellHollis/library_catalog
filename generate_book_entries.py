@@ -1,4 +1,6 @@
-shelf_array_count = 0
+#this array creates the various html files and overwrites the previous versions with new headers
+#this structure is repeated in the "End" section to append the footer and end of html to all the files
+shelf_array_count = 0  #counter counts up through array positions
 shelf_array = ["Fiction", "Non-Fiction", "Art-Design", "Art-Film", "Art-Instruction", "Mythology", "Poetry-Plays-Essays", "Comics-Manga-Visual"]
 while shelf_array_count < 8:
   shelf_file = ((shelf_array[shelf_array_count])+".html")
@@ -52,7 +54,7 @@ while shelf_array_count < 8:
     </head>
 
     <body>
-  <h1><b>Book Library | Fiction</b></h1>
+  <h1><b>Library Catalog | Fiction</b></h1>
   <h3><a href="Fiction.html">Fiction</a> | <a href="Non-Fiction.html">Non-Fiction</a> | <a href="Art-Design.html">Art-Design</a> | <a href="Art-Film.html">Art-Film</a> | <a href="Art-Instruction.html">Art-Instruction</a> | <a href="Mythology.html">Mythology</a> | <a href="Poetry-Plays-Essays.html">Poetry-Plays-Essays</a> | <a href="Comics-Manga-Visual.html">Comics-Manga-Visual</a></h3>
   <br>
             
