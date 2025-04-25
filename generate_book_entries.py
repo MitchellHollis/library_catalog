@@ -11,7 +11,7 @@ while shelf_array_count < 8:
   # w overwrites file, a adds to existing contents
   f = open((shelf_file), 'w') 
   
-  # the html code which will go in the file GFG.html 
+  # the html code which will go in the file
   html_template = """
     <!DOCTYPE html>
     <head>
