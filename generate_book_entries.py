@@ -107,13 +107,14 @@ while (book_select)[0] != "end":
     book_series = (book_select)[3]
     book_entry = str((book_select)[4])
     book_title = (book_select)[5]
-    book_year = str((book_select)[6])
-    book_isbn = str((book_select)[7])
-    book_pages = str((book_select)[8])
-    book_cover = (book_select)[9]
-    book_wiki = (book_select)[10]
-    book_goodreads = (book_select)[11]
-    book_description = (book_select)[12]
+    book_subtitle = ((book_select)[6])
+    book_year = str((book_select)[7])
+    book_isbn = str((book_select)[8])
+    book_pages = str((book_select)[9])
+    book_cover = (book_select)[10]
+    book_wiki = (book_select)[11]
+    book_goodreads = (book_select)[12]
+    book_description = (book_select)[13]
     #write the end of the html
     # to open/create a new html file in the write mode 
     # w overwrites file, a adds to existing contents
@@ -132,6 +133,7 @@ while (book_select)[0] != "end":
           <div class="col-xs-8 col-sm-8 col-md-6 col-lg-6"> <!--info-->
               <b>"""+(book_series)+"""  """+(book_entry)+"""</b>  <!--series and entry number-->
               <h2>"""+(book_title)+"""</h2> <!--book Title-->
+              <p><i>"""+(book_subtitle)+"""</i></p> <!--subtitle-->
               <h4>"""+(book_year)+""" | """+(book_pages)+"""pg</h4> <!--year and page count-->
               <h5>ISBN: """+(book_isbn)+"""</h5> <!--isbn number-->
               <b><a href="""+(book_wiki)+""">Wikipedia</a> | <a href="""+(book_goodreads)+""">Goodreads</a></b><!--wikipedia and goodreads--> 
